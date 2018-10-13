@@ -1,4 +1,4 @@
-//punto 1. cambia el color del titulo y alterna 
+//cambiar el color del titulo y alterna 
 function colorBlink(selector) {
 	$(selector).animate({
 			opacity: '1',
@@ -363,9 +363,8 @@ function deletesCandy() {
 	})
 }
 
-//punto 4 y 6. temporizador y boton reiniciar
-//cambia el aspecto de la página
-//final del juego
+//temporizador y boton reiniciar
+//finalizar juego
 function endGame() {
 	$('div.panel-tablero, div.time').effect('fold');
 	$('h1.main-titulo').addClass('title-over')
