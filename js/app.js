@@ -245,7 +245,7 @@ function fillBoard() {
 	setValidations();
 }
 
-// Si hay dulces que borrar
+// funcion para borrar dulces
 function setValidations() {
 	columnValidation();
 	rowValidation();
@@ -256,7 +256,7 @@ function setValidations() {
 }
 
 
-//punto 7. interacción del usuario con el elemento caramelo es drag and drop
+//interacción del usuario con el elemento caramelo es drag and drop
 //efecto de movimiento entre los caramelos
 function addCandyEvents() {
 	$('img').draggable({
