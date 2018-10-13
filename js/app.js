@@ -36,7 +36,7 @@ function colorBlink(selector) {
 		});
 }
 
-//punto 2. funcion para generar números aleatorios
+//funcion para generar números aleatorios
 function getRandomInt(min, max) {
 	min = Math.ceil(min);
 	max = Math.floor(max);
@@ -86,7 +86,7 @@ function candyColumns(index) {
 	return candyColumn[index];
 }
 
-//punto 3. Valida si hay dulces que se eliminarán en una columna
+//Valida si hay dulces que se eliminarán en una columna
 function columnValidation() {
 	for (var j = 0; j < 7; j++) {
 		var counter = 0;
@@ -142,7 +142,7 @@ function deleteColumnCandy(candyPosition, candyColumn) {
 	}
 }
 
-// Valida si hay dulces que deben eliminarse en una fila
+// se valida si hay dulces que deben eliminarse en una fila
 function rowValidation() {
 	for (var j = 0; j < 6; j++) {
 		var counter = 0;
@@ -198,7 +198,7 @@ function deleteHorizontal(candyPosition, candyRow) {
 	}
 }
 
-//contador de puntuacion muestra la puntuacion
+//contador de puntuacion
 function setScore(candyCount) {
 	var score = Number($('#score-text').text());
 	switch (candyCount) {
@@ -220,7 +220,7 @@ function setScore(candyCount) {
 	$('#score-text').text(score);
 }
 
-//pone los elemento caramelo en el tablero
+//poner los elemento caramelo en el tablero
 function checkBoard() {
 	fillBoard();
 }
